@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Image cache example page</title>
+    <script type="text/javascript" src="lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/ImageCache.js"></script>
+    <script type="text/javascript" src="../js/jquery.imagecache.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $().image('setup', {srcs: [
+                'images/Black_widow.png',
+                'images/Cap-Shield.png',
+                'images/Captain-America.png',
+                'images/Hawkeye.png',
+                'images/Hulk.png',
+                'images/Iron-Man.png',
+                'images/Nick-Fury.png']});
+
+            $('#black-widow1, #black-widow2, #black-widow3').image({src: 'images/Black_widow.png'});
+            $('.cap-shield').image({src: 'images/Cap-Shield.png'});
+            $('.captain-america').image({src: 'images/Captain-America.png', title: 'Captain America'});
+            $('.hawkeye').image({src: 'images/Hawkeye.png', title: 'Hawkeye'});
+            $('.hulk').image({src: 'images/Hulk.png', title: 'Hulk'});
+            $('.iron-man').image({src: 'images/Iron-Man.png', title: 'Iron Man'});
+            $('.nick-fury').image({src: 'images/Nick-Fury.png', title: 'Nick Fury'});
+            $('.thor').image({src: 'images/Thor.png', title: 'Thor'});
+        });
+    </script>
+    <style type="text/css">
+        img {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <h3>Simple setup looks like this:</h3>
+        <code>
+            $().image('setup', {srcs: [
+            'images/Black_widow.png',
+            'images/Cap-Shield.png',
+            'images/Captain-America.png',
+            'images/Hawkeye.png',
+            'images/Hulk.png',
+            'images/Iron-Man.png',
+            'images/Nick-Fury.png']});
+        </code>
+    </div>
+    <h3>Usage examples are then:</h3>
+    <table>
+        <tr>
+            <td><code>$('#black-widow1, #black-widow2, #black-widow3').image({src: 'images/Black_widow.png'});</code></td>
+            <td><div id="black-widow1"/></td>
+            <td><div id="black-widow2"/></td>
+            <td><div id="black-widow3"/></td>
+        </tr>
+        <tr>
+            <td><code>$('.cap-shield').image({src: 'images/Cap-Shield.png'});</code></td>
+            <td><div class="cap-shield"/></td>
+            <td><div class="cap-shield"/></td>
+            <td><div class="cap-shield"/></td>
+        </tr>
+        <tr>
+            <td><code>$('.captain-america').image({src: 'images/Captain-America.png', title: 'Captain America'});</code></td>
+            <td><div class="captain-america"/></td>
+            <td><div class="captain-america"/></td>
+            <td><div class="captain-america"/></td>
+        </tr>
+        <tr>
+            <td><code>$('.hawkeye').image({src: 'images/Hawkeye.png', title: 'Hawkeye'});</code></td>
+            <td><div class="hawkeye"/></td>
+            <td><div class="hawkeye"/></td>
+            <td><div class="hawkeye"/></td>
+        </tr>
+        <tr>
+            <td><code>$('.hulk').image({src: 'images/Hulk.png', title: 'Hulk'});</code></td>
+            <td><div class="hulk"/></td>
+            <td><div class="hulk"/></td>
+            <td><div class="hulk"/></td>
+        </tr>
+        <tr>
+            <td><code>$('.iron-man').image({src: 'images/Iron-Man.png', title: 'Iron Man'});</code></td>
+            <td><div class="iron-man"/></td>
+            <td><div class="iron-man"/></td>
+            <td><div class="iron-man"/></td>
+        </tr>
+        <tr>
+            <td><code>$('.nick-fury').image({src: 'images/Nick-Fury.png', title: 'Nick Fury'});</code></td>
+            <td><div class="nick-fury"/></td>
+            <td><div class="nick-fury"/></td>
+            <td><div class="nick-fury"/></td>
+        </tr>
+        <tr>
+            <td><code>$('.thor').image({src: 'images/Thor.png', title: 'Thor'});</code></td>
+            <td><div class="thor"/></td>
+            <td><div class="thor"/></td>
+            <td><div class="thor"/></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
