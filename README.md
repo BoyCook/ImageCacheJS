@@ -19,6 +19,7 @@ JQuery plugin
     $('.image-div').image({src: 'images/img1.png', title: 'My happy image'});
 
 Core
+
     //Setup
     var images = new ImageCache(['images/img1.png', 'images/img2.png']);
     //Usage
